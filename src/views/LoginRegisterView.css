@@ -1,9 +1,9 @@
-.log-reg-container{
+.log-reg-container {
     display: flex;
     justify-content: center;
     align-items: center;
     background: url('../views/components/images/posters-background.jpg');
-    height:calc(100vh - 75px);
+    height: calc(100vh - 75px);
 }
 
 .log-reg-container::after {
@@ -20,7 +20,7 @@
 .log-reg-box {
     position: relative;
     width: 100%;
-    max-width: 400px; 
+    max-width: 400px;
     border-radius: 15px;
     font-size: 20px;
     color: white;
@@ -98,4 +98,28 @@
 
 .btn-link:hover {
     color: #ffeba7;
+}
+
+.genre-selector h3{
+    margin-top: 10px;
+    color: #e05a00;
+}
+
+.genre-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.genre-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.genre-item input {
+    width: 18px;
+    height: 18px;
 }
