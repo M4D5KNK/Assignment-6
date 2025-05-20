@@ -1,4 +1,4 @@
-import SearchView from '../components/SearchView';
+import './SearchView.css'
 
 function SearchView() {
 
@@ -8,3 +8,5 @@ function SearchView() {
         </div>
     )
 }
+
+export default SearchView;
