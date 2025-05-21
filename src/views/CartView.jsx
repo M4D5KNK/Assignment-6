@@ -6,7 +6,7 @@ import FooterSection from './components/FooterSection.jsx';
 
 function CartView() {
     const { cart, setCart } = useStoreContext();
-    
+
     return (
         <div>
             <HeaderSection />
@@ -21,13 +21,14 @@ function CartView() {
                     ) : (
                         cart.entrySeq().map(([key, value]) => {
                             return (
-                                <div className="cart-item" key={key}>
-                                    <img src={`https://image.tmdb.org/t/p/w500${value.poster_path}`} alt={value.title} />
-                                    <h1>{value.title}</h1>
-                                    <button onClick={() => setCart((prevCart) => prevCart.delete(key))}>Remove</button>
-                                </div>
+                                    <div className="movie-card" key={key}>
+                                        <img src={`https://image.tmdb.org/t/p/w500${value.poster_path}`} alt={value.title} />
+                                        <h3>{value.title}</h3>
+                                        <p>Rating: {value.vote_average?.toFixed(1)}</p>
+                                        <button className='buy-button' onClick={() => setCart((prevCart) => prevCart.delete(key))}>Remove</button>
+                                    </div>
                             )
-                        })
+                        })                        
                     )}
 
                 </div>

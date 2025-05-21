@@ -51,7 +51,7 @@ function GenreView() {
             </Link>
             <h3>{movie.title}</h3>
             <p>Rating: {movie.vote_average?.toFixed(1)}</p>
-            <button onClick={() => cartAdd(movie)}>
+            <button className="buy-button" onClick={() => cartAdd(movie)}>
               {cart.has(movie.id) ? "Added" : "Buy"}
             </button>
           </div>

@@ -24,11 +24,15 @@ function HeaderSection() {
                         <>
                             <a className="nav-link"><Link to={`/`} className="nav-link">Home</Link></a>
                             <a className="nav-link"><Link to={`/movies`} className="nav-link">Movies</Link></a>
+                            <a className="nav-link"><Link to={`/movies/search`} className="nav-link">Search</Link></a>
+
                         </>
                     ) : (
                         <>
                             <a className="nav-link"><Link to={`/`} className="nav-link">Home</Link></a>
                             <a className="nav-link"><Link to={`/login`} className="nav-link">Movies</Link></a>
+                            <a className="nav-link"><Link to={`/login`} className="nav-link">Search</Link></a>
+
                         </>
                     )}
                 </div>

@@ -7,6 +7,7 @@ import GenreView from "../src/views/GenreView"
 import DetailView from "../src/views/DetailView";
 import SettingsView from "../src/views/SettingsView";
 import CartView from "../src/views/CartView";
+import SearchView from "./views/SearchView";
 import './App.css'
 import ErrorView from "./views/ErrorView";
 import { StoreProvider } from "./context/context";
@@ -24,6 +25,7 @@ function App() {
           <Route path="/movies" element={<MoviesView />}>
             <Route path="genre/:genre_id" element={<GenreView />} />
             <Route path="details/:id" element={<DetailView />} />
+            <Route path="search" element={<SearchView />} />
           </Route>
           <Route path="*" element={<ErrorView />} />
         </Routes>
