@@ -120,7 +120,7 @@ function RegisterView() {
                         </div>
 
                         <button className="btn" type="submit">Register</button>
-                        <a className="btn-link">Already Have An Account? <Link to={'/login'}>Login</Link></a>
+                        <a className="btn-link">Already Have An Account? <Link to={'/movies'}>Login</Link></a>
 
 
                         <div className="genre-selector">
